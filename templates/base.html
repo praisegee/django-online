@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+
+        .div {
+            border: 1px solid black;
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            background-color: aquamarine;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div">
+        <h1 style="text-align: center;">Todo List</h1>
+        <hr>
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <ul>
+        {% for task in tasks%}
+        <a href="{% url 'task' task.pk %}">
+            <li style="margin: 5px 0;">{{ task.title }}</li>
+        </a>
+        {% endfor %}
+    </ul>
+</div>
+
+
+{% endblock content %}
